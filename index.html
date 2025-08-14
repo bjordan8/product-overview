@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brian — Product Manager Portfolio</title>
+  <meta name="description" content="Product Manager portfolio highlighting customer insights, data products, and case studies across media & entertainment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef8ff',
+              100: '#d9eeff',
+              200: '#b3dcff',
+              300: '#86c6ff',
+              400: '#4ea7ff',
+              500: '#1b86ff',
+              600: '#0b6ae6',
+              700: '#0a55b4',
+              800: '#0c4a91',
+              900: '#0e3c70',
+            },
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji'; }
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.7); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-slate-50 text-slate-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="font-extrabold tracking-tight text-xl">Brian<span class="text-brand-600">.</span>PM</a>
+        <nav class="hidden md:flex gap-6 text-sm font-medium">
+          <a href="#work" class="hover:text-brand-700">Work</a>
+          <a href="#about" class="hover:text-brand-700">About</a>
+          <a href="#skills" class="hover:text-brand-700">Skills</a>
+          <a href="#resume" class="hover:text-brand-700">Resume</a>
+          <a href="#contact" class="hover:text-brand-700">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="menuBtn" class="p-2 rounded-lg border border-slate-200 hover:bg-slate-50" aria-label="Open Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden border-t border-slate-100 bg-white">
+      <nav class="max-w-7xl mx-auto px-4 py-3 grid gap-3 text-sm">
+        <a href="#work" class="py-2">Work</a>
+        <a href="#about" class="py-2">About</a>
+        <a href="#skills" class="py-2">Skills</a>
+        <a href="#resume" class="py-2">Resume</a>
+        <a href="#contact" class="py-2">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <svg aria-hidden="true" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#dbeafe"/>
+            <stop offset="100%" stop-color="#eff6ff"/>
+          </linearGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#g)"/>
+      </svg>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand-700 bg-brand-50 px-3 py-1 rounded-full">
+            <span class="inline-block w-2 h-2 rounded-full bg-brand-600"></span>
+            Product Manager · Customer Insights & Data Products
+          </span>
+          <h1 class="mt-6 text-4xl sm:text-5xl font-extrabold leading-tight">
+            I build data-informed experiences that grow users and revenue.
+          </h1>
+          <p class="mt-5 text-slate-600 max-w-xl">
+            8+ years driving product strategy across media & entertainment. I turn customer insights into shipping features, measurable outcomes, and delightful experiences.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#work" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-brand-600 text-white font-semibold shadow hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-400">
+              View My Work
+            </a>
+            <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-slate-300 font-semibold hover:bg-white">
+              Get in Touch
+            </a>
+            <a href="./Brian_Product_Manager_Resume.pdf" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-transparent font-semibold text-brand-700 hover:underline" download>
+              Download Resume →
+            </a>
+          </div>
+
+          <!-- Metrics badges -->
+          <dl class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="glass rounded-2xl p-4 border border-white/50 shadow-sm">
+              <dt class="text-sm text-slate-500">DAU Lift</dt>
+              <dd class="text-2xl font-extrabold">+15%</dd>
+            </div>
+            <div class="glass rounded-2xl p-4 border border-white/50 shadow-sm">
+              <dt class="text-sm text-slate-500">Retention</dt>
+              <dd class="text-2xl font-extrabold">+23% YoY</dd>
+            </div>
+            <div class="glass rounded-2xl p-4 border border-white/50 shadow-sm">
+              <dt class="text-sm text-slate-500">App Rating</dt>
+              <dd class="text-2xl font-extrabold">4.8 / 5</dd>
+            </div>
+            <div class="glass rounded-2xl p-4 border border-white/50 shadow-sm">
+              <dt class="text-sm text-slate-500">Time to Launch</dt>
+              <dd class="text-2xl font-extrabold">12 wks</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="relative">
+          <div class="rounded-3xl border border-slate-200 bg-white shadow-xl p-6">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="col-span-2">
+                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                  <p class="text-xs text-slate-500">Current Focus</p>
+                  <p class="mt-1 font-semibold">Personalization & Recommendations</p>
+                  <p class="text-sm text-slate-600">Experimentation-led roadmap to grow engagement via content relevancy.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                <p class="text-xs text-slate-500">Tooling</p>
+                <p class="mt-1 font-semibold">SQL · GA4 · Amplitude · BigQuery</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                <p class="text-xs text-slate-500">Ways of Working</p>
+                <p class="mt-1 font-semibold">Agile · PRD · A/B Testing</p>
+              </div>
+              <div class="col-span-2 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                <p class="text-xs text-slate-500">Now exploring</p>
+                <p class="mt-1 font-semibold">Director of Product roles in Customer Insights & Data Products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Case Studies -->
+  <section id="work" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-6 mb-10">
+        <div>
+          <h2 class="text-3xl font-extrabold">Selected Work</h2>
+          <p class="mt-2 text-slate-600">A few outcomes I’m proud of. Each case study includes the problem, approach, and impact.</p>
+        </div>
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 text-brand-700 font-semibold hover:underline">Request Full Portfolio →</a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="group rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow">
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-bold">Push Notification Strategy — CBS News</h3>
+              <span class="text-xs px-2 py-1 rounded-full bg-brand-50 text-brand-700 border border-brand-100">Mobile</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">Identified friction to opt-in and redesigned onboarding & settings discovery.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1 list-disc list-inside">
+              <li>Improved opt-in conversion via targeted education</li>
+              <li>Repositioned sign-up pathways based on analytics</li>
+              <li class="font-semibold">Impact: +15% DAU, +23% retention YoY</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="group rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow">
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-bold">“Soundscapes” on Connected TV — iHeartRadio</h3>
+              <span class="text-xs px-2 py-1 rounded-full bg-brand-50 text-brand-700 border border-brand-100">CTV</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">Shepherded concept → launch across platforms to increase engagement.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1 list-disc list-inside">
+              <li>Cross-functional leadership (Design, Eng, Data, BD)</li>
+              <li>Experimentation roadmap & KPI alignment</li>
+              <li class="font-semibold">Impact: Lift in monthly engagement & revenue</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="group rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow">
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-bold">Personalized Content Recommendations</h3>
+              <span class="text-xs px-2 py-1 rounded-full bg-brand-50 text-brand-700 border border-brand-100">Data</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">Deployed recs engine with user segmentation to boost relevancy.</p>
+            <ul class="mt-4 text-sm text-slate-700 space-y-1 list-disc list-inside">
+              <li>SQL- & GA4-driven insights → prioritization</li>
+              <li>PRDs, hypothesis trees, and A/B tests</li>
+              <li class="font-semibold">Impact: Higher CTR and session time</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-10">
+        <a href="#contact" class="inline-flex items-center px-4 py-2 rounded-xl border border-slate-300 hover:bg-white font-medium">Ask for deep-dive case studies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-10 items-start">
+        <div class="lg:col-span-1">
+          <h2 class="text-3xl font-extrabold">About</h2>
+          <p class="mt-2 text-slate-600">Product leader blending strategy, analytics, and execution.</p>
+        </div>
+        <div class="lg:col-span-2 space-y-5">
+          <p>I’m a Product Manager with 8+ years in consumer media and entertainment. I specialize in <span class="font-semibold">customer insights</span>, <span class="font-semibold">data products</span>, and <span class="font-semibold">personalization</span>. I rally teams around clear outcomes and ship iterative value fast.</p>
+          <p>Recently, I’ve focused on content discovery and engagement, improving push notification strategy at CBS News and launching the <em>Soundscapes</em> feature at iHeartRadio on Connected TV.</p>
+          <p>Outside of work, I enjoy exploring new data viz techniques and mentoring aspiring PMs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold">Skills</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl border border-slate-200 bg-white p-6">
+          <h3 class="font-bold">Product & Strategy</h3>
+          <ul class="mt-3 text-sm text-slate-700 space-y-2 list-disc list-inside">
+            <li>Roadmapping, OKRs, PRDs</li>
+            <li>Discovery interviews & JTBD</li>
+            <li>Hypothesis-driven development</li>
+          </ul>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-6">
+          <h3 class="font-bold">Data & Experimentation</h3>
+          <ul class="mt-3 text-sm text-slate-700 space-y-2 list-disc list-inside">
+            <li>SQL, GA4, Amplitude, BigQuery</li>
+            <li>A/B testing, cohort analysis</li>
+            <li>Dashboarding & instrumentation</li>
+          </ul>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-6">
+          <h3 class="font-bold">Execution</h3>
+          <ul class="mt-3 text-sm text-slate-700 space-y-2 list-disc list-inside">
+            <li>Agile / Scrum</li>
+            <li>Cross-functional leadership</li>
+            <li>Stakeholder comms & alignment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="py-20 bg-white border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-6">
+        <div>
+          <h2 class="text-3xl font-extrabold">Resume</h2>
+          <p class="mt-2 text-slate-600">View inline below or download the PDF.</p>
+        </div>
+        <a href="./Brian_Product_Manager_Resume.pdf" class="inline-flex items-center px-4 py-2 rounded-xl bg-brand-600 text-white font-semibold shadow hover:bg-brand-700" download>
+          Download PDF
+        </a>
+      </div>
+      <div class="mt-6 rounded-3xl border border-slate-200 overflow-hidden">
+        <!-- Replace src with your actual resume file path -->
+        <iframe title="Resume" src="./Brian_Product_Manager_Resume.pdf" class="w-full h-[720px]" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl font-extrabold">Let’s connect</h2>
+          <p class="mt-2 text-slate-600">Open to Principal/Director roles in Customer Insights & Data Products. I reply quickly.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="mailto:youremail@example.com" class="inline-flex items-center px-5 py-3 rounded-xl bg-brand-600 text-white font-semibold shadow hover:bg-brand-700">Email Me</a>
+            <a href="https://www.linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener" class="inline-flex items-center px-5 py-3 rounded-xl border border-slate-300 font-semibold hover:bg-white">LinkedIn</a>
+            <a href="https://calendly.com/YOUR-HANDLE/intro" target="_blank" rel="noopener" class="inline-flex items-center px-5 py-3 rounded-xl border border-slate-300 font-semibold hover:bg-white">Schedule a Call</a>
+          </div>
+        </div>
+        <form class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="grid gap-4">
+            <div>
+              <label for="name" class="text-sm font-medium">Name</label>
+              <input id="name" name="name" type="text" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="Jane Doe" />
+            </div>
+            <div>
+              <label for="email" class="text-sm font-medium">Email</label>
+              <input id="email" name="email" type="email" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="jane@example.com" />
+            </div>
+            <div>
+              <label for="message" class="text-sm font-medium">Message</label>
+              <textarea id="message" name="message" rows="4" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="Hi Brian, I’d like to chat about…"></textarea>
+            </div>
+            <button type="button" onclick="window.location='mailto:youremail@example.com'" class="inline-flex justify-center px-5 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800">Send</button>
+            <p class="text-xs text-slate-500">This form opens your email client. For a hosted form, connect to a service like Formspree or Airtable Forms.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t border-slate-100 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© <span id="year"></span> Brian — Product Manager</p>
+      <div class="text-sm text-slate-500">Built with HTML + Tailwind</div>
+    </div>
+  </footer>
+
+  <script>
+    // mobile nav toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+      });
+    }
+    // dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
